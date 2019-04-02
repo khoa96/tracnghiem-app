@@ -1,4 +1,4 @@
-import { REGISTER_USER, REGISTER_USER_SUCCESS, REGISTER_USER_ERROR } from '../constanst/actionTypes';
+import { REGISTER_USER, REGISTER_USER_SUCCESS, REGISTER_USER_ERROR, LOGIN_USER, LOGIN_USER_SUCCESS, LOGIN_USER_ERROR } from '../constanst/actionTypes';
 
 // ham dang ki 1 user
 export const registerUserAction = (payload) => {
@@ -19,6 +19,27 @@ export const registerUserSuccess = (payload) => {
 export const registerUserError = (payload) => {
     return {
         type: REGISTER_USER_ERROR,
+        payload
+    }
+}
+
+export const loginUseAction = (payload) => {
+    return {
+        type: LOGIN_USER,
+        payload
+    }
+}
+
+export const loginUserSuccess = (payload) => {
+    return {
+        type: LOGIN_USER_SUCCESS,
+        payload
+    }
+}
+
+export const loginUserError = (payload) => {
+    return {
+        type: LOGIN_USER_ERROR,
         payload
     }
 }

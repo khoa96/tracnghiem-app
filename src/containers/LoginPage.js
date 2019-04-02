@@ -7,7 +7,7 @@ export default class LoginPage extends Component {
       super(props)
     
       this.state = {
-         isShowMessage: true
+         isShowMessage: true,
       }
     }
     
